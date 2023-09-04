@@ -1,0 +1,4152 @@
+
+
+<head>
+
+	<style>
+
+		body {
+
+			font-size: larger;
+
+			font-family: Verdana;
+
+		}
+
+		.ability-source-container {
+
+			margin-bottom: 80px;
+
+		}
+
+
+
+		.augment-table {
+
+			width: 70%;
+
+		}
+
+
+
+		.source-selector {
+
+			min-width: 120px;
+
+			min-height: 30px;
+
+			background-color:lightblue;
+
+			border: solid black 1px;
+
+			margin-left: 10px;
+
+			margin-right: 10px;
+
+			display: inline-block;
+
+			text-align: center;
+
+			cursor: pointer;
+
+			user-select: none;
+
+			padding-left: 4px;
+
+			padding-right: 4px;
+
+		}
+
+
+
+		.source-selectors {
+
+			min-height: 50px;
+
+		}
+
+
+
+		.source-selected {
+
+			background-color: yellow;
+
+		}
+
+	</style>
+
+</head>
+
+
+
+<body>
+
+	<div class="source-selectors">
+
+		<span class="source-selector" data-source="Magma Miner">
+
+			Magma Miner
+
+		</span>
+
+		<span class="source-selector" data-source="Mosscloak">
+
+			Mosscloak
+
+		</span>
+
+		<span class="source-selector" data-source="Clairvoyant">
+
+			Clairvoyant
+
+		</span>
+
+		<span class="source-selector" data-source="Weaver">
+
+			Weaver
+
+		</span>
+
+		<span class="source-selector" data-source="Obelisk">
+
+			Obelisk
+
+		</span>
+
+		<span class="source-selector" data-source="Starter Class">
+
+			Starter Class
+
+		</span>
+
+		<span class="source-selector" data-source="Star Captain">
+
+			Star Captain
+
+		</span>
+
+		<span class="source-selector" data-source="Draftable">
+
+			Draftable
+
+		</span>
+
+	</div>
+
+
+
+		<div class="ability-source-container" style="display: none" data-source="Magma Miner">
+
+			<h2 class="ability-source">Magma Miner</h2>
+
+				<h3>Bonk</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Bolstered Bonk</td>
+
+							<td width="100">+15 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Bonk</td>
+
+							<td width="100"><nobr>+4 critchance</nobr>
+<nobr>+75 critdamage</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Extracting Bonk</td>
+
+							<td width="100">On hitting, 10% chance to spawn an orb.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Smouldering Bonk</td>
+
+							<td width="100">Inflict 1 stack of burn</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Scorching Bonk</td>
+
+							<td width="100">Inflict 1 stack of burn. If already inflicted with burn, also inflict 1 stack of burn to nearby Enemies.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shattering Bonk</td>
+
+							<td width="100">Inflict shatter.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Whack-A-Bonk</td>
+
+							<td width="100">Bonk costs <nobr>0 manaresource</nobr> the first 2 times you use it each turn.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Whopping Bonk</td>
+
+							<td width="100">+35 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Leaping Strike</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Heavy Leap</td>
+
+							<td width="100">+20 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Scorching Leap</td>
+
+							<td width="100">Inflict 3 stacks of burn.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quick Leap</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Leap</td>
+
+							<td width="100">Gain 1 shieldresource for each Enemy hit.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Stunning Leap</td>
+
+							<td width="100">Inflict dazed.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Dense Leap</td>
+
+							<td width="100">+60 damage</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Leap</td>
+
+							<td width="100"><nobr>+10 critchance</nobr>
+<nobr>+150 critdamage</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Leap</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Smash</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Scorching Smash</td>
+
+							<td width="100">Inflict 5 stacks of burn.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Strengthened Smash</td>
+
+							<td width="100">+45 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Smash</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Smash</td>
+
+							<td width="100"><nobr>+6 critchance</nobr>
+<nobr>+100 critdamage</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Extracting Smash</td>
+
+							<td width="100">On defeating an Enemy with Smash, spawn an orb. Once per turn.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Mega Smash</td>
+
+							<td width="100">+120 damage</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Oversized Smash</td>
+
+							<td width="100">Larger area of effect. Can now hit more than one Enemy.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Smash</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+		</div>
+
+		<div class="ability-source-container" style="display: none" data-source="Mosscloak">
+
+			<h2 class="ability-source">Mosscloak</h2>
+
+				<h3>Throw</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Sharp Throw</td>
+
+							<td width="100">+10 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Poison Throw</td>
+
+							<td width="100">Inflict 2 stacks of poison.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Poison-Tipped Throw</td>
+
+							<td width="100">On hitting an Enemy not inflicted with Poison, inflict 6 stacks of Poison. Otherwise inflict 2 stacks. </td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Lacerating Throw</td>
+
+							<td width="100">Inflict 2 stacks of Bleed.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Scavenging Throw</td>
+
+							<td width="100">On defeating an Enemy, gain 1 Shuriken.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Throw</td>
+
+							<td width="100"><nobr>+8 critchance</nobr>
+<nobr>+125 critdamage</nobr></td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Spinning Throw</td>
+
+							<td width="100">On hitting, hit an additional time. <nobr>-15</nobr> damage.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Piercing Throw</td>
+
+							<td width="100">+35 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Scavenger&#x27;s Dash</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Poison Dash</td>
+
+							<td width="100">Inflict 4 stacks of poison.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Distant Dash</td>
+
+							<td width="100">Increased dash range.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quick Dash</td>
+
+							<td width="100">On use, reset cd. Once per turn.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Dash</td>
+
+							<td width="100">On passing through Enemies, gain 1 shieldresource.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Strengthening Dash</td>
+
+							<td width="100">On passing through Enemies, gain 2 physicalpower until your next attack.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Dash</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Evasive Dash</td>
+
+							<td width="100">Gain 1 stack of evasive.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Dash</td>
+
+							<td width="100">Gain criticalcharge on a random Binding.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Flurry</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Distant Flurry</td>
+
+							<td width="100">Increased range.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Flurry</td>
+
+							<td width="100"><nobr>+4 critchance</nobr>
+<nobr>+75 critdamage</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Ravaging Flurry</td>
+
+							<td width="100">Your Shuriken deal +5 damage.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Stockpiled Flurry</td>
+
+							<td width="100">On your turn, gain 1 shuriken.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Poison Flurry</td>
+
+							<td width="100">Inflict 4 stacks of poison per hit.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Lacerating Flurry</td>
+
+							<td width="100">Inflict 1 stack of bleed per hit.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Flurry</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Destructive Flurry</td>
+
+							<td width="100">Your shuriken deal +10 damage.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+		</div>
+
+		<div class="ability-source-container" style="display: none" data-source="Clairvoyant">
+
+			<h2 class="ability-source">Clairvoyant</h2>
+
+				<h3>Telekinesis</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Extended Telekinesis</td>
+
+							<td width="100">Increased range.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Amplified Telekinesis</td>
+
+							<td width="100">+10 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Telekinesis</td>
+
+							<td width="100">Gain seShielding Aura/se.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Charging Telekinesis</td>
+
+							<td width="100">On your turn, gain 1 psicharge.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Telekinesis</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Hexing Telekinesis</td>
+
+							<td width="100">Gain seHexing Aura/se.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Healing Telekinesis</td>
+
+							<td width="100">Gain seHeal Aura/se.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Catapulting Telekinesis</td>
+
+							<td width="100">+35 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Psychic Pulse</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Empowering Pulse</td>
+
+							<td width="100">Allies hit gain 1 abilitypower for the rest of the turn.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Pulse</td>
+
+							<td width="100"><nobr>+4 critchance</nobr>
+<nobr>+75 critdamage</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Pulse</td>
+
+							<td width="100">Allies hit gain 1 shieldresource.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Potent Pulse</td>
+
+							<td width="100">+15 damage</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Pulse</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Grievous Pulse</td>
+
+							<td width="100">Gain seDamage Aura/se.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Charging Pulse</td>
+
+							<td width="100">Gain 1 psicharge.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Mighty Pulse</td>
+
+							<td width="100">+40 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Spirit Bomb</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Potent Spirit Bomb</td>
+
+							<td width="100">+30 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Spirit Bomb</td>
+
+							<td width="100"><nobr>+4 critchance</nobr>
+<nobr>+75 critdamage</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Spirit Bomb</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Charging Spirit Bomb</td>
+
+							<td width="100">On your turn, gain 1 psicharge.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Surging Spirit Bomb</td>
+
+							<td width="100">+50 damage</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Charged Spirit Bomb</td>
+
+							<td width="100">+100 damage at full charge.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Destructive Spirit Bomb</td>
+
+							<td width="100"><nobr>+10 critchance</nobr>
+<nobr>+150 critdamage</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Spirit Bomb</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr>.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+		</div>
+
+		<div class="ability-source-container" style="display: none" data-source="Weaver">
+
+			<h2 class="ability-source">Weaver</h2>
+
+				<h3>Thread</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Thickened Threads</td>
+
+							<td width="100">+15 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Lengthy Threads</td>
+
+							<td width="100">Further range and wider area.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Elemental Threads</td>
+
+							<td width="100">On your turn, inflict 1 stack of frostbite and 3 stacks of burn to Enemies with threaded.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Threads</td>
+
+							<td width="100">All Bindings gain <nobr>2 critchance</nobr> and <nobr>25 critdamage</nobr> for each Thread attached to you.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Sturdy Threads</td>
+
+							<td width="100">Each thread attached to you grants <nobr>1 shieldperturnstat</nobr>.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Hexing Threads</td>
+
+							<td width="100">On turn start, inflict hex to your threaded Enemies.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Draining Threads</td>
+
+							<td width="100">On defeating Enemies you've threaded or on detaching one of your threads, restore 1 healthresource.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Spun Threads</td>
+
+							<td width="100">Costs <nobr>0 manaresource</nobr> the first 2 times you use it each turn.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Constrict</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Rope Friction</td>
+
+							<td width="100">Inflict 2 stacks of burn.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Tightened Constriction</td>
+
+							<td width="100">+20 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Pulling Constriction</td>
+
+							<td width="100">Pull Enemies towards you.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Constrict</td>
+
+							<td width="100"><nobr>+6 critchance</nobr>
+<nobr>+100 critdamage</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Constrict</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Defensive Constrict</td>
+
+							<td width="100">Gain 1 shieldresource for each Enemy hit.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Constricting Knots</td>
+
+							<td width="100">+25 damage for each thread attached to you.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Constrained Constriction</td>
+
+							<td width="100">+60 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Stitch</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Potent Stitch</td>
+
+							<td width="100">+30 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Widened Stitch</td>
+
+							<td width="100">Increased AOE range.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Sewing Stitch</td>
+
+							<td width="100">Inflict threaded before dealing damage. Stitch can hit non-threaded Enemies.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Seamless Stitch</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Patchwork Stitch</td>
+
+							<td width="100">Gain 1 shieldresource for each Enemy hit.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Stitch</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Stitch</td>
+
+							<td width="100"><nobr>+10 critchance</nobr>
+<nobr>+150 critdamage</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Cross Stitch</td>
+
+							<td width="100">+30 damage for each thread attached to you.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+		</div>
+
+		<div class="ability-source-container" style="display: none" data-source="Obelisk">
+
+			<h2 class="ability-source">Obelisk</h2>
+
+				<h3>Ironclap</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Hardened Ironclap</td>
+
+							<td width="100">+10 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Broad Ironclap</td>
+
+							<td width="100">Increased range.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Spiked Ironclap</td>
+
+							<td width="100">Gain 1 stack of spiked.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Ironclap</td>
+
+							<td width="100">On hitting 3 or more Enemies, gain 1 additional shieldresource.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Ironclap</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Frozen Ironclap</td>
+
+							<td width="100">Inflict 1 stack of frostbite.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Heavy Ironclap</td>
+
+							<td width="100">Inflict 1 stack of crush.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Thunderous Ironclap</td>
+
+							<td width="100">On hitting, inflict 1 stack of shocked. Once per turn.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Shield Bash</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Critical Shield Bash</td>
+
+							<td width="100"><nobr>+4 critchance</nobr>
+<nobr>+75 critdamage</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Bolstered Shield Bash</td>
+
+							<td width="100">Increased range.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Shield Bash</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Stunning Shield Bash</td>
+
+							<td width="100">Inflict dazed</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Hardened Shield Bash</td>
+
+							<td width="100">+4 damage per damageresist you have.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shattering Shield Bash</td>
+
+							<td width="100">Inflict shatter.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Charged Shield Bash</td>
+
+							<td width="100">+100 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Shield Bash</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Seismic Slam</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Massive Seismic Slam</td>
+
+							<td width="100">+15 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Dense Seismic Slam</td>
+
+							<td width="100">Inflict 1 stack of crush.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Seismic Slam</td>
+
+							<td width="100">Gain 1 shieldresource for each Enemy hit.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shattering Seismic Slam</td>
+
+							<td width="100">Inflict shatter.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Seismic Slam</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Crushing Seismic Slam</td>
+
+							<td width="100"><nobr>+35 crush</nobr> seDamage/se</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Seismic Slam</td>
+
+							<td width="100"><nobr>+10 critchance</nobr>
+<nobr>+150 critdamage</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Seismic Slam</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+		</div>
+
+		<div class="ability-source-container" style="display: none" data-source="Starter Class">
+
+			<h2 class="ability-source">Starter Class</h2>
+
+		</div>
+
+		<div class="ability-source-container" style="display: none" data-source="Star Captain">
+
+			<h2 class="ability-source">Star Captain</h2>
+
+				<h3>Chillazer</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Frosty Chillazer</td>
+
+							<td width="100">Inflict 1 stack of frostbite to the secondary targets</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Potent Chillazer</td>
+
+							<td width="100">+10 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Long Chillazer</td>
+
+							<td width="100">Increased range and bounce distance.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Chillazer</td>
+
+							<td width="100"><nobr>+6 critchance</nobr>
+<nobr>+100 critdamage</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Deadly Chillazer</td>
+
+							<td width="100">+30 damage</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shredding Chillazer</td>
+
+							<td width="100">Inflict hex and shatter to the primary target.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Invigorating Chillazer</td>
+
+							<td width="100">On hitting, gain 2 abilitypower until end of turn.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Synergizing Chillazer</td>
+
+							<td width="100">On use, reduce the cd of Mission Leader by 1.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Mission Leader</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Frosty Leader</td>
+
+							<td width="100">Offensive Mode grants <nobr>+10 frostbitedamage</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Spiked Leader</td>
+
+							<td width="100">Defensive Mode grants 2 stacks of spiked.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Mission Leader</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Commanding Mission Leader</td>
+
+							<td width="100"><nobr>+20 sentineldrone</nobr> seDamage/se</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Mission Leader</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Fleet Commander Mission Leader</td>
+
+							<td width="100">This Binding grants an additional sentineldrone.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Resistant Mission Leader</td>
+
+							<td width="100">Defensive Mode grants resistant.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shotcaller Mission Leader</td>
+
+							<td width="100">Offensive Mode inflicts marked on the nearest Enemy.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Cryoclasm</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Frosty Cryoclasm</td>
+
+							<td width="100">Inflict 2 additional stacks of frostbite to secondary targets</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Potent Cryoclasm</td>
+
+							<td width="100">+30 damage for both hits</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Deep Freeze Cryoclasm</td>
+
+							<td width="100">Inflict 8 additional stacks of frostbite to the primary target</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Dazing Cryoclasm</td>
+
+							<td width="100">Inflict dazed on the primary target</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Cryoclasm</td>
+
+							<td width="100">Gain 1 shieldresource for each Enemy hit by the secondary effect</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Marking Cryoclasm</td>
+
+							<td width="100">Inflict 2 stacks of marked to the primary target</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Cryoclasm</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr>.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Commanding Cryoclasm</td>
+
+							<td width="100">Gain 1 sentineldrone for each Enemy hit by the secondary effect</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+		</div>
+
+		<div class="ability-source-container" style="display: none" data-source="Draftable">
+
+			<h2 class="ability-source">Draftable</h2>
+
+				<h3>Afterimage</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Swift Image</td>
+
+							<td width="100">Target gains +10 movement.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Precise Image</td>
+
+							<td width="100">Target gains precise.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickening Image</td>
+
+							<td width="100">Reduces cd of the highest cd Binding by 1.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Image</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Evasive Image</td>
+
+							<td width="100">Grant +1 stack of evasive.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Accurate Image</td>
+
+							<td width="100">An additional random Binding gains criticalcharge.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Image</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounting Image</td>
+
+							<td width="100">Grants <nobr>1 costreduction</nobr> to a random Binding.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Blink</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Precise Blink</td>
+
+							<td width="100">Gain precise.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Distant Blink</td>
+
+							<td width="100">Range increased to max.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Blink</td>
+
+							<td width="100">Gain <nobr>2 shieldresource</nobr>.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Blink</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickening Blink</td>
+
+							<td width="100">Reduce cd of your highest cd Binding by 1.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounting Blink</td>
+
+							<td width="100">Gain <nobr>1 costreduction</nobr> to a random Binding.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Extracting Blink</td>
+
+							<td width="100">Spawn an orb near your teleport destination. Once per turn.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Evasive Blink</td>
+
+							<td width="100">Gain 1 stack of evasive.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Cleave</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Cleave</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Sharp Cleave</td>
+
+							<td width="100">Inflict +2 stacks of bleed.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Cleave</td>
+
+							<td width="100">Gain <nobr>1 shieldresource</nobr> for each Enemy hit.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Breaking Cleave</td>
+
+							<td width="100">Inflict shatter.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Bolstered Cleave</td>
+
+							<td width="100">+50 damage</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Razor-Sharp Cleave</td>
+
+							<td width="100">Inflict +5 stacks of bleed.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Bloodthirsty Cleave</td>
+
+							<td width="100">On hitting Enemies, restore <nobr>1 healthresource</nobr> for each Enemy.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Cleave</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Cone of Frost</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Potent Frost</td>
+
+							<td width="100">+25 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Frigid Frost</td>
+
+							<td width="100">Inflict +2 stacks of frostbite.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Frost</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Wider Frost</td>
+
+							<td width="100">Wider area of effect.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Mighty Frost</td>
+
+							<td width="100">+75 damage</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Frost</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Freezing Frost</td>
+
+							<td width="100"><nobr>+25 frostbitedamage</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Rending Frost</td>
+
+							<td width="100">You deal +25% damage to Enemies inflicted with frostbite.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Cultivate</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Cultivated Shields</td>
+
+							<td width="100">On pickup, gain <nobr>3 shieldresource</nobr>.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Cultivated Vitality</td>
+
+							<td width="100">On pickup, restores <nobr>1 healthresource</nobr>.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Cultivated Quickness</td>
+
+							<td width="100">On pickup, gain 1 stack of evasive.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Cultivation</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Cultivation</td>
+
+							<td width="100">On pickup, gain criticalcharge on a random Binding.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Cultivated Will</td>
+
+							<td width="100">On pickup, gain <nobr>1 manaresource</nobr>.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Cultivated Strength</td>
+
+							<td width="100">On pickup, physical Bindings gain <nobr>1 costreduction</nobr>.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Cultivated Potency</td>
+
+							<td width="100">On pickup, magical Bindings gain <nobr>1 costreduction</nobr>.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Grasp</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Potent Pull</td>
+
+							<td width="100">+35 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Distant Pull</td>
+
+							<td width="100">Increased range.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Dazing Pull</td>
+
+							<td width="100">Inflict dazed.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Sapping Pull</td>
+
+							<td width="100">Inflict sap.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Pull</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Pull</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Violent Pull</td>
+
+							<td width="100">+100 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Pull</td>
+
+							<td width="100"><nobr>+10 critchance</nobr>
+<nobr>+150 critdamage</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Incendiary</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Smouldering Incendiary</td>
+
+							<td width="100">+25 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Scorching Incendiary</td>
+
+							<td width="100">Inflict +2 stacks of burn.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Incendiary</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Explosive Incendiary</td>
+
+							<td width="100">On Critting, inflict 5 stacks of burn.
+<nobr>+6 critchance</nobr>
+<nobr>+100 critdamage</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Incendiary</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Blazing Incendiary</td>
+
+							<td width="100">Inflict +5 stacks of burn. </td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Combusting Incendiary</td>
+
+							<td width="100"><nobr>+10 burndamage</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Fueling Incendiary</td>
+
+							<td width="100">You deal +25% damage to Enemies inflicted with burn.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Invigorate</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Invigorate</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickening Invigorate</td>
+
+							<td width="100">Reduce cd of your highest cd Binding by 1.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Restorative Invigorate</td>
+
+							<td width="100">Restore <nobr>2 healthresource</nobr>.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Invigoration</td>
+
+							<td width="100">Gain criticalcharge on a random Binding.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Resistant Invigorate</td>
+
+							<td width="100">Gain resistant.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Bolstered Invigorate</td>
+
+							<td width="100">Gain <nobr>5 abilitypower</nobr> for your next Binding.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Hastening Invigorate</td>
+
+							<td width="100">Reduce cd of your Bindings by 1.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounting Invigorate</td>
+
+							<td width="100">Gain <nobr>1 costreduction</nobr> to a random Binding.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Jinx</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Potent Jinx</td>
+
+							<td width="100">+25 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Dire Jinx</td>
+
+							<td width="100">+5 damage per stack of dread.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Critical Jinx</td>
+
+							<td width="100"><nobr>+6 critchance</nobr>
+<nobr>+100 critdamage</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Jinx</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Preserving Jinx</td>
+
+							<td width="100">Gain 3 stacks of Dread after using Jinx.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Jinx</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Dreadful Jinx</td>
+
+							<td width="100">+30 damage per stack of dread.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Lethal Jinx</td>
+
+							<td width="100">+100 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Lightning Bolt</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Critical Lightning</td>
+
+							<td width="100"><nobr>+4 critchance</nobr>
+<nobr>+75 critdamage</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Potent Lightning</td>
+
+							<td width="100">+35 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Lightning</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Empowering Lightning</td>
+
+							<td width="100"><nobr>+2 abilitypower</nobr> until a Binding is used.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Lethal Lightning</td>
+
+							<td width="100"><nobr>+8 critchance</nobr>
+<nobr>+125 critdamage</nobr></td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">High-Voltage Lightning</td>
+
+							<td width="100">+50 damage</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Charged Lightning</td>
+
+							<td width="100">Inflict an additonal stack of shocked.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Discounted Lightning</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> manacost</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Pilfer</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Absorbing Pilfer</td>
+
+							<td width="100">Steal <nobr>1 healthresource</nobr>.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Pickpocket Pilfer</td>
+
+							<td width="100">Gain 10 movement.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Pilfer</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Greedy Pilfer</td>
+
+							<td width="100">Increased range. Can Pilfer from multiple Enemies at once, but manaresource cost is increased by 1.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Pilfer</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Orb Thief</td>
+
+							<td width="100">Steal an orb. Once every two turns.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Lucky Pilfer</td>
+
+							<td width="100">25% chance to steal a random Vestige.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Large Pockets</td>
+
+							<td width="100">Steal an additional amount of rungold.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Poison Vapor</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Noxious Vapor</td>
+
+							<td width="100">+25 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Potent Vapor</td>
+
+							<td width="100">Inflict +3 stacks of poison.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Vapor</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Widespread Vapor</td>
+
+							<td width="100">Wider area of effect.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Mighty Vapor</td>
+
+							<td width="100">Inflict +10 stacks of poison.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Vapor</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Putrid Poison</td>
+
+							<td width="100"><nobr>+5 poisondamage</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Debilitating Poison</td>
+
+							<td width="100">You deal +25% damage to Enemies inflicted with poison.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Quicken</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Swiftened Quicken</td>
+
+							<td width="100">Gain <nobr>15 movement</nobr>.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Quicken</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Invigorating Quicken</td>
+
+							<td width="100">Gain 3 abilitypower until a Binding is used.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Vigorous Quicken</td>
+
+							<td width="100">Gain 2 stacks of vigor.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Magic Quicken</td>
+
+							<td width="100">Reduce the cd of your magical Bindings by 1.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Physical Quicken</td>
+
+							<td width="100">Reduce the cd of your physical Bindings by 1.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Quicken</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Enhanced Quicken</td>
+
+							<td width="100">Reduce cd of another random Binding to 0.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Restoration</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Rushed Restoration</td>
+
+							<td width="100">Restore 1 additional healthresource. Increase cd by 1.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shielding Restoration</td>
+
+							<td width="100">Target gains <nobr>2 shieldresource</nobr>.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Amplified Restoration</td>
+
+							<td width="100">Restore <nobr>+1 healthresource</nobr>.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Restoration</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Prepared Restoration</td>
+
+							<td width="100">On turn start, full costreduction.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Mending Restoration</td>
+
+							<td width="100">If the recipient has less than 50% maxhp, restore an additional <nobr>3 healthresource</nobr>.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Resistant Restoration</td>
+
+							<td width="100">Target gains resistant.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Sturdy Restoration</td>
+
+							<td width="100">Healing from Restoration or its upgrades can overheal, granting shieldresource instead of healthresource if the Ally is restored for greater than their maxhp.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Shield Wall</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Barbed Wall</td>
+
+							<td width="100">Gain 2 stacks of spiked.</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Plated Wall</td>
+
+							<td width="100"><nobr>+2 shieldresource</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Wall</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Stockpiled Wall</td>
+
+							<td width="100">Grants 1 additional shieldresource for each turn Shield Wall is not used. Lost at end of combat.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Spiked Wall</td>
+
+							<td width="100">Gain 4 stacks of spiked.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Restorative Wall</td>
+
+							<td width="100">Restore <nobr>2 healthresource</nobr>.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Fortifying Wall</td>
+
+							<td width="100">Whenever you lose healthresource, reduce cd of Shield Wall by 1.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Impenetrable Wall</td>
+
+							<td width="100"><nobr>+5 shieldresource</nobr></td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+				</table>
+
+				<h3>Smoke Bomb</h3>
+
+				<table class="augment-table">
+
+					<tr>
+
+						<th width="100px">Name</th>
+
+						<th width="100">Description</th>
+
+						<th width="100px">Rarity</th>
+
+						<th width="100px">Unique</th>
+
+					</tr>
+
+						<tr>
+
+							<td width="100px">Critical Smoke Bomb</td>
+
+							<td width="100"><nobr>+4 critchance</nobr>
+<nobr>+75 critdamage</nobr></td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Potent Smoke Bomb</td>
+
+							<td width="100">+25 damage</td>
+
+							<td width="100px">Common</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Quickened Smoke Bomb</td>
+
+							<td width="100"><nobr><nobr>-1</nobr> cooldown</nobr></td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shrapnel Smoke Bomb</td>
+
+							<td width="100">On hitting, inflict 8 stacks of Bleed.</td>
+
+							<td width="100px">Uncommon</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Hexing Smoke Bomb</td>
+
+							<td width="100">Inflict hex.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Shattering Smoke Bomb</td>
+
+							<td width="100">Inflict shatter.</td>
+
+							<td width="100px">Rare</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Devastating Smoke Bomb</td>
+
+							<td width="100">+75 damage</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">False</td>
+
+						</tr>
+
+						<tr>
+
+							<td width="100px">Widespread Smoke Bomb</td>
+
+							<td width="100">Targets all Enemies.</td>
+
+							<td width="100px">Epic</td>
+
+							<td width="100px">True</td>
+
+						</tr>
+
+				</table>
+
+		</div>
+
+
+
+	<script>
+
+		const sourceSelectors = document.getElementsByClassName("source-selector");
+
+		const views = new Map();
+
+		for (const view of document.getElementsByClassName("ability-source-container")) {
+
+			views.set(view.getAttribute("data-source"), view);
+
+		}
+
+
+
+		let currentView = null;
+
+
+
+		for (const selectSource of sourceSelectors) {
+
+			const view = views.get(selectSource.getAttribute("data-source"));
+
+
+
+			selectSource.addEventListener('click', e => {
+
+
+
+				if (selectSource.classList.contains("source-selected")) {
+
+					return;
+
+				}
+
+
+
+				for (const other of sourceSelectors) {
+
+					if (other != selectSource) {
+
+						other.classList.remove("source-selected");
+
+					}
+
+				}
+
+
+
+				if (currentView) {
+
+					currentView.style.display = 'none';
+
+				}
+
+				selectSource.classList.add("source-selected");
+
+				view.style.display = 'block';
+
+				currentView = view;
+
+			});
+
+		}
+
+
+
+	</script>
+
+</body>
+
