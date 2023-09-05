@@ -1,0 +1,121 @@
+body {
+    font-size: larger;
+    font-family: Verdana;
+}
+
+.ability-source-container {
+    margin-bottom: 80px;
+}
+
+.generic-selector {
+    min-width: 120px;
+    min-height: 30px;
+    background-color: lightblue;
+    border: solid black 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.nav-selectors {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.source-selectors,
+.page-selectors {
+    min-height: 50px;
+}
+
+
+.generic-selected {
+    background-color: yellow;
+}
+
+
+.content-root {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-root > div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 50%;
+    width: 60%;
+}
+
+.generic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.generic-box {
+    border: 2px solid lightgray;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+.generic-container > div {
+    width: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.ascensions-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    
+}
+
+.ascensions-container > div {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.ascensions-container > div > span {
+    font-size: medium;
+    display: block;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.ascension-name {
+    font-weight: bold;
+}
+
+.text-added {
+    color: darkviolet;
+}
+
+.vestige-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vestige-table td, .vestige-table th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
