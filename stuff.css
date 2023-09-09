@@ -119,3 +119,20 @@ table {
     padding-top: 8px;
     padding-bottom: 8px;
 }
+
+.enemy-state {
+    display: flex;
+    flex-direction: row;
+}
+
+.enemy-phase {
+    margin-left: 30px;
+    border: 1px solid darkblue;
+    padding: 4px;
+}
+
+.enemy-block {
+    border: 1px solid black;
+    padding: 6px;
+    margin-left: 20px;
+}
