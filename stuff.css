@@ -3,6 +3,7 @@
     --text-color: #000000;
     --link-color: #0000EE;
     --link-hover-color: #551A8B;
+    --blink-color: bisque;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +12,7 @@
         --text-color: #ABB2BF;
         --link-color: #61AFEF;
         --link-hover-color: #C678DD;
+        --blink-color: darkblue;
     }
 }
 
@@ -124,7 +126,7 @@ html {
 }
 
 table {
-    border: 1px solid black;
+    border: 1px solid var(--link-hover-color);
 }
 
 .ascension-name {
@@ -162,4 +164,54 @@ table {
     border: 1px solid black;
     padding: 6px;
     margin-left: 20px;
+}
+
+.searcher {
+    display: inline-block;
+    min-height: 30px;
+    position: relative;
+}
+
+#search-input {
+    display: inline-block;
+    font-size: large;
+}
+
+#results {
+    border: 1px solid #000;
+    padding: 10px;
+    position: absolute;
+    min-width: 500px;
+    top: 100%;
+    right: 0px;
+    background-color: #fff; /* This will make the background white instead of transparent */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* This adds a subtle shadow to make the box stand out more */
+    z-index: 1; /* This ensures the results box appears on top of other page elements */
+}
+
+#results div {
+    padding: 4px 8px; /* This adds some padding to each result */
+    cursor: pointer; /* This changes the cursor to a hand when hovering over a result */
+}
+
+#results .selected {
+    background-color: #ddd; /* This changes the background color of the selected result */
+}
+
+.notice-me-senpai {
+    background-color: var(--blink-color);
+}
+
+.binding-title {
+    display: grid;
+    grid-auto-flow: column;
+    max-height: 30pt;
+}
+
+.linkme {
+    justify-self: right;
+    align-self: center;
+    font-size: smaller;
+    cursor: pointer;
+    user-select: none;
 }
