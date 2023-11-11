@@ -18,7 +18,7 @@
         --link-hover-color: #C678DD;
         --blink-color: darkblue;
         --added-color: #ffb140;
-        --tag-color: red;
+        --tag-color: #cc3333;
     }
 }
 
@@ -229,7 +229,7 @@ h4 {
 }
 
 .ability-tags {
-    color: darkred;
+    color: var(--tag-color);
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: smaller;
